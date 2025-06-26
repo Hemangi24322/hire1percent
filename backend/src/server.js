@@ -8,7 +8,12 @@ const contactRoutes= require('./routes/contact.routes');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://hire1percent.vercel.app',
+  methods: ['GET', 'POST'], // Include other methods if needed
+  credentials: true
+}));
+
 app.use(express.json());
 
 // Request logging middleware
