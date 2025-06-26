@@ -1,0 +1,35 @@
+/* src/index.css */
+
+/* Keep these at the top */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add the CSS below for the background animation */
+.animate-aurora {
+  animation: aurora 20s infinite alternate;
+}
+
+
+@keyframes aurora {
+  0% {
+    transform: translate(-20%, -20%) scale(1);
+    opacity: 0.4;
+  }
+  25% {
+    transform: translate(20%, -10%) scale(1.1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(10%, 20%) scale(0.9);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translate(-20%, 10%) scale(1.2);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-20%, -20%) scale(1);
+    opacity: 0.4;
+  }
+}
