@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const API_URL = 'http://localhost:3000/api';
+  const API_URL = 'https://hire1percent.onrender.com/api';
 
   const handleResponse = async (response) => {
     const contentType = response.headers.get('content-type');

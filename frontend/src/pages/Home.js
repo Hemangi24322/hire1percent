@@ -14,7 +14,7 @@ const MotionContainer = ({ children, className }) => (
   </motion.div>
 );
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://hire1percent.onrender.com/api';
 
 const logoUrl = "/logo192.png"; // Use your actual logo path if different
 

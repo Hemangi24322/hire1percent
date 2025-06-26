@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://hire1percent.onrender.com/api';
 
 // Add request interceptor to include auth token
 axios.interceptors.request.use(
