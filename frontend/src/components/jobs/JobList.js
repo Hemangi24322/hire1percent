@@ -14,7 +14,7 @@ const JobList = () => {
   const fetchJobs = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:3000/api/jobs/employer', {
+      const response = await axios.get('https://hire1percent.onrender.com/api/jobs/employer', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -31,7 +31,7 @@ const JobList = () => {
     try {
       const token = localStorage.getItem('token');
       await axios.put(
-        `http://localhost:3000/api/jobs/${jobId}/status`,
+        `https://hire1percent.onrender.com/api/jobs/${jobId}/status`,
         { status: newStatus },
         {
           headers: {

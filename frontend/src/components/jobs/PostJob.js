@@ -31,7 +31,7 @@ const PostJob = () => {
     try {
       const token = localStorage.getItem('token');
       await axios.post(
-        'http://localhost:3000/api/jobs',
+        'https://hire1percent.onrender.com/api/jobs',
         formData,
         {
           headers: {

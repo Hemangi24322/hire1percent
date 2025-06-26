@@ -19,7 +19,7 @@ const AdminDashboard = () => {
         const token = localStorage.getItem('token');
 
         // Fetch all jobs for admin
-        const jobsResponse = await axios.get('http://localhost:3000/api/jobs/all', {
+        const jobsResponse = await axios.get('https://hire1percent.onrender.com/api/jobs/all', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setAllJobs(jobsResponse.data);
